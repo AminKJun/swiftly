@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Swiftly Agency</title>
+  <title>Swiftly Agency - AI-Powered Influencer Marketing</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,49 +22,180 @@
 </nav>
 
 <section class="hero">
-  <h2>Influencer Marketing. Powered by AI.</h2>
-  <p>We connect brands with the right creators using data-driven intelligence.</p>
-  <button>Work With Us</button>
+  <div class="hero-content">
+    <h2>Influencer Marketing. Powered by AI.</h2>
+    <p>We connect brands with the right creators using data-driven intelligence.</p>
+    <button class="btn-primary">Work With Us</button>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Digital Marketing Analytics Dashboard">
+  </div>
 </section>
 
 <section id="services">
-  <h2>Services</h2>
+  <h2>Our Services</h2>
+  <p class="section-subtitle">Comprehensive digital marketing solutions tailored for your brand</p>
   <div class="cards">
-    <div class="card">SEO & Organic Growth</div>
-    <div class="card">Paid & Organic Ads</div>
-    <div class="card highlight">Influencer Marketing</div>
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=400&q=80" alt="SEO Analytics">
+      </div>
+      <h3>SEO & Organic Growth</h3>
+      <p>Boost your visibility with data-driven SEO strategies and organic content optimization.</p>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=400&q=80" alt="Digital Advertising">
+      </div>
+      <h3>Paid & Organic Ads</h3>
+      <p>Maximize ROI with targeted advertising campaigns across all major platforms.</p>
+    </div>
+    <div class="card highlight">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&q=80" alt="Influencer Marketing">
+      </div>
+      <h3>Influencer Marketing</h3>
+      <p>Connect with top creators who align perfectly with your brand values and audience.</p>
+    </div>
   </div>
 </section>
 
-<section id="ai">
-  <h2>AI Talent Matcher</h2>
-  <p>Describe your brand and let our AI do the rest.</p>
-  <input placeholder="Brand niche..." />
-  <button onclick="matchTalent()">Match Talent</button>
-  <p id="result"></p>
+<section id="ai" class="ai-section">
+  <div class="ai-container">
+    <div class="ai-image">
+      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&q=80" alt="AI Technology">
+    </div>
+    <div class="ai-content">
+      <h2>AI Talent Matcher</h2>
+      <p>Describe your brand and let our AI find the perfect influencer match in seconds.</p>
+      <div class="ai-input-group">
+        <input type="text" id="brandInput" placeholder="Describe your brand niche..." />
+        <button class="btn-primary" onclick="matchTalent()">Match Talent</button>
+      </div>
+      <div id="result" class="result-box"></div>
+    </div>
+  </div>
 </section>
 
 <section id="talent">
-  <h2>Our Talent</h2>
+  <h2>Our Talent Network</h2>
+  <p class="section-subtitle">Work with top creators across every niche</p>
   <div class="grid">
-    <div class="profile">Tech Creator</div>
-    <div class="profile">Lifestyle Influencer</div>
-    <div class="profile">Fashion Model</div>
+    <div class="profile">
+      <div class="profile-image">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="Tech Creator">
+      </div>
+      <div class="profile-info">
+        <h3>Alex Chen</h3>
+        <span class="role">Tech Creator</span>
+        <span class="followers">1.2M followers</span>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="profile-image">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80" alt="Lifestyle Influencer">
+      </div>
+      <div class="profile-info">
+        <h3>Sarah Miller</h3>
+        <span class="role">Lifestyle Influencer</span>
+        <span class="followers">850K followers</span>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="profile-image">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&q=80" alt="Fashion Model">
+      </div>
+      <div class="profile-info">
+        <h3>Emma Johnson</h3>
+        <span class="role">Fashion Model</span>
+        <span class="followers">2.1M followers</span>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="profile-image">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&q=80" alt="Fitness Influencer">
+      </div>
+      <div class="profile-info">
+        <h3>Marcus Davis</h3>
+        <span class="role">Fitness Influencer</span>
+        <span class="followers">920K followers</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="brands">
-  <h2>Brands We Work With</h2>
-  <div class="brands">
-    <span>Brand A</span>
-    <span>Brand B</span>
-    <span>Brand C</span>
+<section id="brands" class="brands-section">
+  <h2>Trusted by Leading Brands</h2>
+  <p class="section-subtitle">Join hundreds of companies growing with Swiftly</p>
+  <div class="brands-grid">
+    <div class="brand-logo">
+      <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&q=80" alt="Brand Partner">
+      <span>TechFlow</span>
+    </div>
+    <div class="brand-logo">
+      <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&q=80" alt="Brand Partner">
+      <span>Luxe Beauty</span>
+    </div>
+    <div class="brand-logo">
+      <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&q=80" alt="Brand Partner">
+      <span>FitLife</span>
+    </div>
+    <div class="brand-logo">
+      <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&q=80" alt="Brand Partner">
+      <span>EcoStyle</span>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>Ready to Transform Your Marketing?</h2>
+    <p>Get started with AI-powered influencer matching today.</p>
+    <button class="btn-primary btn-large">Get Started Free</button>
   </div>
 </section>
 
 <footer>
-  © 2026 Swiftly Agency
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>Swiftly</h3>
+      <p>AI-powered influencer marketing for modern brands.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#ai">AI Matching</a>
+      <a href="#talent">Talent</a>
+      <a href="#brands">Brands</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Swiftly Agency. All rights reserved.</p>
+  </div>
 </footer>
+
+<!-- AI Chat Agent -->
+<div id="chat-widget" class="chat-widget">
+  <button id="chat-toggle" class="chat-toggle" onclick="toggleChat()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </button>
+  <div id="chat-container" class="chat-container">
+    <div class="chat-header">
+      <h4>Swiftly AI Assistant</h4>
+      <button class="chat-close" onclick="toggleChat()">&times;</button>
+    </div>
+    <div id="chat-messages" class="chat-messages">
+      <div class="chat-message bot">
+        <p>Hi! I'm Swiftly's AI assistant. How can I help you with influencer marketing today?</p>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Ask me anything..." onkeypress="handleChatKeypress(event)">
+      <button onclick="sendChatMessage()">Send</button>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
