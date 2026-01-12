@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background: #0b0b0b;
+  color: white;
+  font-family: Inter, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.cards, .grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card, .profile {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 12px;
+  width: 220px;
+}
+
+.highlight {
+  border: 2px solid white;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: black;
+  padding: 20px;
+}
